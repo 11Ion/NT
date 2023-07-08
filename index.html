@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/output.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/larsseit-font-family" rel="stylesheet">
+    <link rel="stylesheet" href="src/animate.css">
+    <title>NT.</title>
+</head>
+<body class="bg-darkblue bg-bg-body bg-no-repeat bg-cover bg-top relative mx-auto w-60 ssm:w-full overflow-auto ssm:overflow-x-hidden">
+    <header class="px-8 pt-5 flex justify-between items-center absolute w-full max-w-7xl left-1/2  translate-x-[-50%] z-10">
+        <a class="logo text-3xl font-bold text-white wow fadeInLeft" data-wow-duration="1.5s" href="">NT<span class="text-whiteblue">.</span></a>
+        <ul class="hidden md:flex gap-8">
+            <li class="wow fadeInRight" data-wow-duration="1.5s"><a class="" href="#"><img src="/img/search.svg" alt="search"></a></li>
+            <li class="wow fadeInRight" data-wow-duration="1.5s"><a class="py-2 px-7 bg-whiteblue font-bold text-white text-base rounded-full" href="#">Menu</a></li>
+        </ul>
+        <button class="block md:hidden wow fadeInRight" data-wow-duration="1.5s">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>                                             
+        </button>
+    </header>
+    <section class="h-screen bg-hero-img bg-no-repeat bg-cover bg-center w-full px-8 mx-auto min-h-500">
+        <div class="container max-w-7xl mx-auto h-full relative flex items-center justify-center">
+            <div class="wow zoomIn" data-wow-duration="2s">
+                <h1 class="text-white text-center text-5xl md:text-7xl font-bold mb-3.5">Night Trips</h1>
+                <p class="text-center text-white font-bold text-lg pb-3 md:pb-12">WE GOT TRIPS FOR THE TRIPPSTER IN YOU</p>
+                <p class="text-white text-base md:text-lg max-w-2xl hidden smallv:block">Neque, eros commodo, nascetur ullamcorper vitae. Tincidunt ut venenatis, volutpat lorem ut faucibus mauris, quisque. Integer gravida sed quis congue. Vel risus, arcu a viverra leo id pulvinar ultricies. Enim in in in pulvinar nulla sollicitudin. Ullamcorper.</p>
+            </div>
+            <div class="absolute bottom-0 left-0 cursor-pointer hidden md:block wow fadeInLeft" data-wow-duration="1.5s"><img src="img/scrolldown.svg" alt="scroll" draggable="false"></div>
+            <div class="absolute bottom-0 right-0 cursor-pointer wow fadeInRight" data-wow-duration="1.5s">
+                <img class="mb-5 w-6" src="img/twitter.svg" alt="scroll" draggable="false">
+                <img class="mb-5 w-6" src="img/instagram.svg" alt="scroll" draggable="false">
+                <img class="mb-5 w-6" src="img/facebook.svg" alt="scroll" draggable="false">
+            </div>
+        </div>
+    </section>
+    <section class="pt-14 w-full px-8 h-auto">
+        <div class="container max-w-7xl w-full mx-auto block lg:flex gap-8 items-center wow slideInLeft" data-wow-duration="1.5s">
+            <p class="text-white text-center sm:text-left font-bold text-4xl sm:text-5xl lg:text-7xl ">Pick your trip</p>
+            <p class="hidden lg:flex items-center gap-8 font-normal max-w-sm text-white">
+                <img class="w-6" src="img/x.svg" alt="x" draggable="false">
+                Our team put together some trips to you to discover,
+                feel free to discover each of them.</p>
+        </div>
+        <div class="container max-w-7xl mx-auto mt-7 sm:mt-20">
+            <ul class="text-white font-bold flex-wrap sm:flex-nowrap flex justify-center text-sm sm:text-base wow slideInUp" data-wow-duration="0.5s">
+                <li id="l1" class="w-full max-w-xs pb-4 sm:pb-8 border-b-2 border-whiteblue flex justify-center item">Chill Adventure</li>
+                <li id="l2" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Spooky Times</li>
+                <li id="l3" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Desert Madness</li>
+                <li id="l4" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Out in the wild</li>
+            </ul>
+        </div>
+        <div id="d1" class="wow zoomIn" style="display: block;">
+        <div id="d1" class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
+            <div class="w-full bg-none h-auto md:h-600 relative max-w-485 mx-auto">
+                <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
+                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                </div>
+                <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
+                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                </div>
+                <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
+                    <img src="img/Dots.svg" alt="img" draggable="false">
+                </div>
+                <div class="carusel w-full">
+                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
+                </div>
+            </div>
+            <div>
+                <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Chill Adventure</h1>
+                <p class="text-white font-bold text-sm lg:text-base max-w-md pb-9 lg:pb-16 mx-auto lg:mx-0">Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+                    <br>
+                    <br>
+                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, 
+                    dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</p>
+                   <div class="flex lg:block justify-center"><a href="#" class="font-bold text-center px-6 sm:px-12 py-2 sm:py-4 bg-whiteblue text-sm vs:text-base rounded-full text-white shadow-5xl">SEE OUR LATEST OFFER</a></div>
+            </div>
+            <div class="absolute hidden md:block bottom-0 right-0">
+                <h1 class="text-base text-white pb-4 font-bold">SHARE IT:</h1>
+                <div class="flex gap-6">
+                    <a href="#"><img class="w-6" src="img/instagram.svg" alt="instagram" draggable="false"></a>
+                    <a href="#"><img class="w-6" src="img/facebook.svg" alt="facebook" draggable="false"></a>
+                    <a href="#"> <img class="w-6" src="img/twitter.svg" alt="twitter" draggable="false"></a>
+                </div>
+                <img class="absolute -right-6" src="img/line.svg" alt="line" draggable="false">
+            </div>
+        </div>
+    </div>
+        <div id="d2" style="display: none;">
+        <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 block lg:flex gap-28 items-center relative">
+            <div class="w-full bg-none h-auto md:h-600 relative max-w-485 mx-auto">
+                <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
+                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                </div>
+                <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
+                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                </div>
+                <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
+                    <img src="img/Dots.svg" alt="img" draggable="false">
+                </div>
+                <div class="carusel w-full">
+                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="img w-auto h-auto lg:h-600 block" src="img/a.jpg" alt="img" draggable="false">
+                </div>
+            </div>
+            <div >
+                <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Spooky Times</h1>
+                <p class="text-white font-bold text-sm lg:text-base max-w-md pb-9 lg:pb-16 mx-auto lg:mx-0">Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+                    <br>
+                    <br>
+                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, 
+                    dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</p>
+                   <div class="flex lg:block justify-center"><a href="#" class="font-bold text-center px-6 sm:px-12 py-2 sm:py-4 bg-whiteblue text-sm vs:text-base rounded-full text-white shadow-5xl">SEE OUR LATEST OFFER</a></div>
+            </div>
+            <div class="absolute hidden md:block bottom-0 right-0">
+                <h1 class="text-base text-white pb-4 font-bold">SHARE IT:</h1>
+                <div class="flex gap-6">
+                    <a href="#"><img class="w-6" src="img/instagram.svg" alt="instagram" draggable="false"></a>
+                    <a href="#"><img class="w-6" src="img/facebook.svg" alt="facebook" draggable="false"></a>
+                    <a href="#"> <img class="w-6" src="img/twitter.svg" alt="twitter" draggable="false"></a>
+                </div>
+                <img class="absolute -right-6" src="img/line.svg" alt="line" draggable="false">
+            </div>
+        </div>
+    </div>
+        <div id="d3" style="display: none;">
+        <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
+            <div class="w-full h-auto md:h-600 relative max-w-485 mx-auto">
+                <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
+                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                </div>
+                <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
+                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                </div>
+                <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
+                    <img src="img/Dots.svg" alt="img" draggable="false">
+                </div>
+                <div class="carusel w-full">
+                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
+                </div>
+            </div>
+            <div >
+                <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Desert Madness</h1>
+                <p class="text-white font-bold text-sm lg:text-base max-w-md pb-9 lg:pb-16 mx-auto lg:mx-0">Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+                    <br>
+                    <br>
+                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, 
+                    dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</p>
+                   <div class="flex lg:block justify-center"><a href="#" class="font-bold text-center px-6 sm:px-12 py-2 sm:py-4 bg-whiteblue text-sm vs:text-base rounded-full text-white shadow-5xl">SEE OUR LATEST OFFER</a></div>
+            </div>
+            <div class="absolute hidden md:block bottom-0 right-0">
+                <h1 class="text-base text-white pb-4 font-bold">SHARE IT:</h1>
+                <div class="flex gap-6">
+                    <a href="#"><img class="w-6" src="img/instagram.svg" alt="instagram" draggable="false"></a>
+                    <a href="#"><img class="w-6" src="img/facebook.svg" alt="facebook" draggable="false"></a>
+                    <a href="#"> <img class="w-6" src="img/twitter.svg" alt="twitter" draggable="false"></a>
+                </div>
+                <img class="absolute -right-6" src="img/line.svg" alt="line" draggable="false">
+            </div>
+        </div>
+    </div>
+        <div id="d4" style="display: none;">
+        <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
+            <div class="w-full h-auto md:h-600 relative max-w-485 mx-auto">
+                <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
+                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                </div>
+                <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
+                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                </div>
+                <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
+                    <img src="img/Dots.svg" alt="img" draggable="false">
+                </div>
+                <div class="carusel w-full">
+                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
+                </div>
+            </div>
+            <div >
+                <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Out in the wild</h1>
+                <p class="text-white font-bold text-sm lg:text-base max-w-md pb-9 lg:pb-16 mx-auto lg:mx-0">Ornare vivamus molestie pellentesque nunc. Sed sapien erat ultrices curabitur. Erat id fringilla arcu condimentum fames.
+                    <br>
+                    <br>
+                    Aliquet dictum aliquet faucibus cursus turpis. Suspendisse cum rutrum sit ut sociis. Pellentesque neque orci adipiscing pharetra lacus, 
+                    dignissim pharetra ipsum blandit. Feugiat quis quam consectetur lectus id quis tortor vel, mattis.</p>
+                   <div class="flex lg:block justify-center"><a href="#" class="font-bold text-center px-6 sm:px-12 py-2 sm:py-4 bg-whiteblue text-sm vs:text-base rounded-full text-white shadow-5xl">SEE OUR LATEST OFFER</a></div>
+            </div>
+            <div class="absolute hidden md:block bottom-0 right-0">
+                <h1 class="text-base text-white pb-4 font-bold">SHARE IT:</h1>
+                <div class="flex gap-6">
+                    <a href="#"><img class="w-6" src="img/instagram.svg" alt="instagram" draggable="false"></a>
+                    <a href="#"><img class="w-6" src="img/facebook.svg" alt="facebook" draggable="false"></a>
+                    <a href="#"> <img class="w-6" src="img/twitter.svg" alt="twitter" draggable="false"></a>
+                </div>
+                <img class="absolute -right-6" src="img/line.svg" alt="line" draggable="false">
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="w-full h-auto mt-28 overflow-hidden wow zoomIn">
+        <div class="container px-8 max-w-7xl w-full mx-auto block norm:flex items-center gap-3 justify-between">
+            <div class="mx-auto ">
+                <h1 class="text-white text-center norm:text-left mx-auto norm:mx-0 font-bold text-3xl md:text-5xl norm:text-7xl pb-5">About Us</h1>
+                <p class="max-w-full norm:max-w-xs text-center norm:text-left mx-auto norm:mx-o text-white font-bold  text-base md:text-lg">We're a team of four passioned people.</p>
+                <br>
+                <p class="max-w-485 norm:max-w-xs mx-auto norm:mx-o text-white font-normal text-sm md:text-base lg:text-lg">We’re ready to take the world by storm and let you find new travel</p>
+                <br>
+                <p class="max-w-485 norm:max-w-xs mx-auto norm:mx-o text-white font-normal text-sm md:text-base lg:text-lg">Our everyday task is to make sure that you satisfied with the services and products that we provide.</p>
+                <br>
+                <p class="max-w-485 norm:max-w-xs  mx-auto norm:mx-o text-white font-bold text-base md:text-lg pb-9" >With 💖 from Amsterdam, Netherlands.</p>
+                <div class="flex norm:block justify-center mb-8 norm:mb-0"><a href="#" class="text-center font-bold px-6 sm:px-12 py-2 sm:py-4 text-sm vs:text-base bg-whiteblue rounded-full text-white shadow-5xl">READ MOORE ABOUT US</a></div>
+            </div>
+            <div class="w-full max-w-3xl relative mx-auto">
+                <div class="absolute right-0 translate-x-20 -z-10 top-1/2 -translate-y-1/2">
+                    <img src="img/Dots2.svg" alt="img" draggable="false">
+                </div>
+                <div class="absolute left-5 lg:left-0 translate-x-0 lg:-translate-x-11 top-1/2 -translate-y-1/2 w-48 h-20 hidden vs:flex items-center justify-center bg-white rounded-lg shadow-6xl" >
+                    <h1 class="font-bold text-base">MARTIN JACK, <span class="text-whiteblue">CEO</span></h1>
+                </div>
+                <img class="w-full" src="img/about.jpg" alt="img" draggable="false">
+            </div>
+        </div>
+    </section>
+    <section class="mt-32 md:mt-64">
+        <div class="container-fuild w-full max-w-screen-2xl mx-auto bg-darkblue pb-24 px-8">
+            <h1 class="text-white font-bold text-center pt-24 pb-8 text-4xl lg:text-7xl wow fadeInUp" data-wow-duration="0.5s">People’s thoughts</h1>
+            <h2 class="text-center text-white text-xl lg:text-2xl pb-16 font-bold wow fadeInUp" data-wow-duration="0.5s">SEE WHAT ARE OTHERS SAYING</h2>
+            <ul class="flex gap-5 justify-center flex-wrap max-w-5xl mx-auto px-0 vs:px-8">
+                <li class="p-8 sm:p-16 relative bg-bluebl rounded-xl wow zoomIn">
+                    <p class="max-w-xs text-white text-base">
+                        <span class="font-bold">Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl</span>
+                        <br><br>
+                        adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                    </p>
+                    <div class="flex items-center mt-8 gap-3">
+                        <div>
+                            <img width="w-full" src="img/img_g.png" alt="img" draggable="false">
+                        </div>
+                        <div class="w-full text-white text-xs font-bold" style="max-width: 170px;">
+                            Judy ROSELESS MARKETING HEAD at ROM.
+                        </div>
+                    </div>
+                    <div class="absolute hidden sm:block top-16 left-4">
+                        <img src="img/s.svg" alt="img" draggable="false">
+                    </div>
+                </li>
+                <li class="p-8 sm:p-16 relative bg-bluebl rounded-xl wow zoomIn">
+                    <p class="max-w-xs text-white text-base">
+                        <span class="font-bold">Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl</span>
+                        <br><br>
+                        adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                    </p>
+                    <div class="flex items-center mt-8 gap-3">
+                        <div>
+                            <img width="w-full" src="img/img_g.png" alt="img" draggable="false">
+                        </div>
+                        <div class="w-full text-white text-xs font-bold" style="max-width: 170px;">
+                            Judy ROSELESS MARKETING HEAD at ROM.
+                        </div>
+                    </div>
+                    <div class="absolute hidden sm:block top-16 left-4">
+                        <img src="img/s.svg" alt="img" draggable="false">
+                    </div>
+                </li>
+                <li class="p-8 sm:p-16 relative bg-bluebl rounded-xl wow zoomIn">
+                    <p class="max-w-xs text-white text-base">
+                        <span class="font-bold">Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl</span>
+                        <br><br>
+                        adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                    </p>
+                    <div class="flex items-center mt-8 gap-3">
+                        <div>
+                            <img width="w-full" src="img/img_g.png" alt="img" draggable="false">
+                        </div>
+                        <div class="w-full text-white text-xs font-bold" style="max-width: 170px;">
+                            Judy ROSELESS MARKETING HEAD at ROM.
+                        </div>
+                    </div>
+                    <div class="absolute hidden sm:block top-16 left-4">
+                        <img src="img/s.svg" alt="img" draggable="false">
+                    </div>
+                </li>
+                <li class="p-8 sm:p-16 relative bg-bluebl rounded-xl wow zoomIn">
+                    <p class="max-w-xs text-white text-base">
+                        <span class="font-bold">Elementum mi felis, sit velit lobortis ultricies non. Mattis enim, nisl</span>
+                        <br><br>
+                        adipiscing natoque diam et. Cum posuere in velit massa sagittis augue egestas. Eu sollicitudin et quam eu. Nunc, sed imperdiet blandit morbi. Maecenas lobortis tristique rutrum.
+                    </p>
+                    <div class="flex items-center mt-8 gap-3">
+                        <div>
+                            <img width="w-full" src="img/img_g.png" alt="img" draggable="false">
+                        </div>
+                        <div class="w-full text-white text-xs font-bold" style="max-width: 170px;">
+                            Judy ROSELESS MARKETING HEAD at ROM.
+                        </div>
+                    </div>
+                    <div class="absolute hidden sm:block top-16 left-4">
+                        <img src="img/s.svg" alt="img" draggable="false">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="mt-20 md:mt-40 px-6">
+        <h1 class="pb-8 text-white font-bold text-4xl md:text-7xl text-center wow zoomIn">See you soon!</h1>
+        <p class="text-white font-bold text-lg md:text-2xl text-center pb-16 md:pb-32 wow zoomIn ">We hope to meet each other very soon.</p>
+    </section>
+    <section class="flex justify-center w-full pb-12 md:pb-24 wow wow zoomIn">
+        <img src="img/linesvg.svg" alt="line" draggable="false">
+    </section>
+    <footer class="px-8">
+        <div class="container max-w-7xl mx-auto hidden md:flex  justify-between">
+            <ul class="text-white">
+                <li class="mb-5 font-bold text-lg"><a href="#">About</a></li>
+                <li class="mb-5 text-base"><img src="img/footer-line.svg" alt="img" draggable="false"></li>
+                <li class="mb-5 text-base"><a href="#">Our Mission</a></li>
+                <li class="mb-5 text-base"><a href="#">Terms</a></li>
+                <li class="mb-5 text-base"><a href="#">Copyrights</a></li>
+            </ul>
+            <ul class="text-white">
+                <li class="mb-5 font-bold text-lg"><a href="#">FAQ</a></li>
+                <li class="mb-5 text-base"><img src="img/footer-line.svg" alt="img" draggable="false"></li>
+                <li class="mb-5 text-base"><a href="#">Rules</a></li>
+                <li class="mb-5 text-base"><a href="#">Tickets</a></li>
+                <li class="mb-5 text-base"><a href="#">Editions</a></li>
+                <li class="mb-5 text-base"><a href="#">Contribute</a></li>
+            </ul>
+            <ul class="text-white">
+                <li class="mb-5 font-bold text-lg"><a href="#">Events</a></li>
+                <li class="mb-5 text-base"><img src="img/footer-line.svg" alt="img" draggable="false"></li>
+                <li class="mb-5 text-base"><a href="#">Star Gazing</a></li>
+                <li class="mb-5 text-base"><a href="#">Desert Mania</a></li>
+                <li class="mb-5 text-base"><a href="#">Dunes Madness</a></li>
+                <li class="mb-5 text-base"><a href="#">Spooky Land</a></li>
+            </ul>
+            <ul class="text-white">
+                <li class="mb-5 font-bold text-lg"><a href="#">Contact us</a></li>
+                <li class="mb-5 text-base"><img src="img/footer-line.svg" alt="img" draggable="false"></li>
+                <li class="mb-5 text-base"><a href="#">hello@example.com</a></li>
+                <li class="mb-5 text-base"><a href="#">(405) 555-0128</a></li>
+                <li class="mb-5 text-base"><a href="#">(252) 555-0126</a></li>
+            </ul>
+        </div>
+        <div class="container max-w-7xl mx-auto ">
+            <h1 class="text-center text-white mt-16 text-base font-normal pb-6">Copyright © Night Trips 2023. All rights reserved.</h1>
+            <h2 class="text-center text-white text-3xl font-bold pb-12">NT<span class="text-whiteblue">.</span></h2>
+        </div>
+    </footer>
+</body>
+    <script src="src/wow.min.js"></script>
+    <script src="src/script.js"></script>
+    <script>
+        new WOW().init();
+        </script>
+</html>
