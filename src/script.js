@@ -8,7 +8,6 @@ var l2 = document.getElementById('l2');
 var l3 = document.getElementById('l3');
 var l4 = document.getElementById('l4');
 
-// Function to add transition and animation effect
 function addTransition(element) {
   element.style.opacity = '0';
   element.style.transition = 'opacity 0.5s';
@@ -73,42 +72,66 @@ l4.addEventListener('click', function() {
   l4.style.opacity = '1';
 });
 
-let caruselContainers = document.querySelectorAll('.container');
+let slideIndex = [1,1,1,1]
+let slideId = ["sl","sl1","sl2","sl3"]
 
-caruselContainers.forEach((caruselContainer) => {
-  let images = Array.from(caruselContainer.querySelectorAll('.img'));
-  let leftButton = caruselContainer.querySelector('.lefts');
-  let rightButton = caruselContainer.querySelector('.rights');
 
-  let currentIndex = 0;
+function PlusSlide(n, no){
+    showSlides(slideIndex[no] += n,no)
+}
 
-  images.forEach((image, index) => {
-    if (index !== currentIndex) {
-      image.classList.add('hidden');
-    }
-  });
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {
+      slideIndex[no] = 1;
+  }
+  if (n < 1) {
+      slideIndex[no] = x.length;
+  }
 
-  function showImage(index) {
-    images.forEach((image, i) => {
-      if (i === index) {
-        image.classList.remove('hidden');
+  for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+      x[i].style.opacity = 0; 
+  }
+  
+  fadeIn(x[slideIndex[no] - 1]); 
+}
+
+function fadeIn(element) {
+  element.style.display = "block";
+  let opacity = 0;
+  let interval = setInterval(function () {
+      if (opacity < 1) {
+          opacity += 0.1;
+          element.style.opacity = opacity; 
       } else {
-        image.classList.add('hidden');
+          clearInterval(interval);
       }
-    });
-  }
+  }, 50);
+}
+function scrollToMiddle() {
+  let element = document.getElementById("d1");
+  let offsetTop = element.offsetTop;
+  let elementHeight = element.offsetHeight;
+  let windowHeight = window.innerHeight;
+  let scrollTo = offsetTop - (windowHeight / 2) + (elementHeight / 2);
+  
+  window.scrollTo({
+    top: scrollTo,
+    behavior: "smooth"
+  });
+}
 
-  if (leftButton) {
-    leftButton.addEventListener('click', () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      showImage(currentIndex);
-    });
-  }
+let button = document.getElementById("goscroll");
+button.addEventListener("click", scrollToMiddle);
+function afiseazaAlerta() {
+  alert("It is not working at the moment");
+}
 
-  if (rightButton) {
-    rightButton.addEventListener('click', () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      showImage(currentIndex);
-    });
+window.addEventListener('DOMContentLoaded', function() {
+  var element = document.getElementById('menu');
+  if (element) {
+    element.addEventListener('click', afiseazaAlerta);
   }
 });

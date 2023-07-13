@@ -11,9 +11,14 @@
 <body class="bg-darkblue bg-bg-body bg-no-repeat bg-cover bg-top relative mx-auto w-60 ssm:w-full overflow-auto ssm:overflow-x-hidden">
     <header class="px-8 pt-5 flex justify-between items-center absolute w-full max-w-7xl left-1/2  translate-x-[-50%] z-10">
         <a class="logo text-3xl font-bold text-white wow fadeInLeft" data-wow-duration="1.5s" href="">NT<span class="text-whiteblue">.</span></a>
-        <ul class="hidden md:flex gap-8">
-            <li class="wow fadeInRight" data-wow-duration="1.5s"><a class="" href="#"><img src="/img/search.svg" alt="search"></a></li>
-            <li class="wow fadeInRight" data-wow-duration="1.5s"><a class="py-2 px-7 bg-whiteblue font-bold text-white text-base rounded-full" href="#">Menu</a></li>
+        <ul class="hidden md:flex gap-8 items-center">
+            <li class="wow fadeInRight" data-wow-duration="1.5s">
+                <div class="search-box">
+                    <button class="btn-search"><img src="img/search.svg" alt="img" draggable="false"></button>
+                    <input type="text" class="input-search" placeholder="Search...">
+                  </div>                
+            </li>
+            <li class="wow fadeInRight" data-wow-duration="1.5s"><a class="py-2 px-7 bg-whiteblue font-bold text-white text-base rounded-full" href="#" id="menu">Menu</a></li>
         </ul>
         <button class="block md:hidden wow fadeInRight" data-wow-duration="1.5s">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
@@ -28,7 +33,7 @@
                 <p class="text-center text-white font-bold text-lg pb-3 md:pb-12">WE GOT TRIPS FOR THE TRIPPSTER IN YOU</p>
                 <p class="text-white text-base md:text-lg max-w-2xl hidden smallv:block">Neque, eros commodo, nascetur ullamcorper vitae. Tincidunt ut venenatis, volutpat lorem ut faucibus mauris, quisque. Integer gravida sed quis congue. Vel risus, arcu a viverra leo id pulvinar ultricies. Enim in in in pulvinar nulla sollicitudin. Ullamcorper.</p>
             </div>
-            <div class="absolute bottom-0 left-0 cursor-pointer hidden md:block wow fadeInLeft" data-wow-duration="1.5s"><img src="img/scrolldown.svg" alt="scroll" draggable="false"></div>
+            <div class="absolute bottom-0 left-0 cursor-pointer hidden md:block wow fadeInLeft" data-wow-duration="1.5s"><img id="goscroll" src="img/scrolldown.svg" alt="scroll" draggable="false"></div>
             <div class="absolute bottom-0 right-0 cursor-pointer wow fadeInRight" data-wow-duration="1.5s">
                 <img class="mb-5 w-6" src="img/twitter.svg" alt="scroll" draggable="false">
                 <img class="mb-5 w-6" src="img/instagram.svg" alt="scroll" draggable="false">
@@ -45,28 +50,32 @@
                 feel free to discover each of them.</p>
         </div>
         <div class="container max-w-7xl mx-auto mt-7 sm:mt-20">
-            <ul class="text-white font-bold flex-wrap sm:flex-nowrap flex justify-center text-sm sm:text-base wow slideInUp" data-wow-duration="0.5s">
-                <li id="l1" class="w-full max-w-xs pb-4 sm:pb-8 border-b-2 border-whiteblue flex justify-center item">Chill Adventure</li>
-                <li id="l2" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Spooky Times</li>
-                <li id="l3" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Desert Madness</li>
-                <li id="l4" class="w-full max-w-xs pb-4 sm:pb-8 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Out in the wild</li>
+            <ul class="text-white font-bold transition  flex-col sm:flex-row flex justify-center text-sm sm:text-base wow slideInUp" data-wow-duration="0.5s">
+                <li id="l1" class="w-full max-w-xs pt-4 sm:pt-0 pb-4 sm:pb-4 border-b-2 border-whiteblue flex justify-center mx-auto item">Chill Adventure</li>
+                <li id="l2" class="w-full max-w-xs pt-4 sm:pt-0 pb-4 sm:pb-4 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Spooky Times</li>
+                <li id="l3" class="w-full max-w-xs pt-4 sm:pt-0 pb-4 sm:pb-4 cursor-pointer border-b-2 border-whiteblue mx-auto  flex justify-center opacity-50">Desert Madness</li>
+                <li id="l4" class="w-full max-w-xs pb-4 sm:pb-4 pt-4 sm:pt-0 cursor-pointer border-b-2 border-whiteblue flex justify-center opacity-50">Out in the wild</li>
             </ul>
         </div>
         <div id="d1" class="wow zoomIn" style="display: block;">
-        <div id="d1" class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
+        <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
             <div class="w-full bg-none h-auto md:h-600 relative max-w-485 mx-auto">
                 <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
-                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                    <img  onclick="PlusSlide(-1, 0)"  class="w-16" src="img/left.svg" alt="left" draggable="false">
                 </div>
                 <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
-                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                    <img onclick="PlusSlide(1, 0)" class="w-16" src="img/right.svg" alt="right" draggable="false">
                 </div>
                 <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
                     <img src="img/Dots.svg" alt="img" draggable="false">
                 </div>
                 <div class="carusel w-full">
-                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
-                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
+                    <img class="sl w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="sl w-auto h-auto lg:h-600 hidden" src="img/1.png" alt="img" draggable="false">
+                    <img class="sl w-auto h-auto lg:h-600 hidden" src="img/2.png" alt="img" draggable="false">
+                    <img class="sl w-auto h-auto lg:h-600 hidden" src="img/3.png" alt="img" draggable="false">
+                    <img class="sl w-auto h-auto lg:h-600 hidden" src="img/4.png" alt="img" draggable="false">
+
                 </div>
             </div>
             <div>
@@ -93,18 +102,20 @@
         <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 block lg:flex gap-28 items-center relative">
             <div class="w-full bg-none h-auto md:h-600 relative max-w-485 mx-auto">
                 <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
-                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                    <img onclick="PlusSlide(-1, 1)" class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
                 </div>
                 <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
-                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                    <img onclick="PlusSlide(1, 1)" class="rights w-16" src="img/right.svg" alt="right" draggable="false">
                 </div>
                 <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
                     <img src="img/Dots.svg" alt="img" draggable="false">
                 </div>
                 <div class="carusel w-full">
-                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
-                    <img class="img w-auto h-auto lg:h-600 block" src="img/a.jpg" alt="img" draggable="false">
-                </div>
+                    <img class="sl1 w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="sl1 w-auto h-auto lg:h-600 hidden" src="img/1.png" alt="img" draggable="false">
+                    <img class="sl1 w-auto h-auto lg:h-600 hidden" src="img/2.png" alt="img" draggable="false">
+                    <img class="sl1 w-auto h-auto lg:h-600 hidden" src="img/3.png" alt="img" draggable="false">
+                    <img class="sl1 w-auto h-auto lg:h-600 hidden" src="img/4.png" alt="img" draggable="false">                </div>
             </div>
             <div >
                 <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Spooky Times</h1>
@@ -130,18 +141,20 @@
         <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
             <div class="w-full h-auto md:h-600 relative max-w-485 mx-auto">
                 <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
-                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                    <img onclick="PlusSlide(-1, 2)" class="w-16" src="img/left.svg" alt="left" draggable="false">
                 </div>
                 <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
-                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                    <img onclick="PlusSlide(1, 2)" class="w-16" src="img/right.svg" alt="right" draggable="false">
                 </div>
                 <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
                     <img src="img/Dots.svg" alt="img" draggable="false">
                 </div>
                 <div class="carusel w-full">
-                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
-                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
-                </div>
+                    <img class="sl2 w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="sl2 w-auto h-auto lg:h-600 hidden" src="img/1.png" alt="img" draggable="false">
+                    <img class="sl2 w-auto h-auto lg:h-600 hidden" src="img/2.png" alt="img" draggable="false">
+                    <img class="sl2 w-auto h-auto lg:h-600 hidden" src="img/3.png" alt="img" draggable="false">
+                    <img class="sl2 w-auto h-auto lg:h-600 hidden" src="img/4.png" alt="img" draggable="false">                </div>
             </div>
             <div >
                 <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Desert Madness</h1>
@@ -167,18 +180,20 @@
         <div class="container max-w-7xl mx-auto pt-8 lg:pt-32 lg:flex gap-28 items-center relative">
             <div class="w-full h-auto md:h-600 relative max-w-485 mx-auto">
                 <div class="absolute w-16 bottom-0 right-10 cursor-pointer z-20">
-                    <img class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
+                    <img onclick="PlusSlide(-1, 3)" class="lefts w-16" src="img/left.svg" alt="left" draggable="false">
                 </div>
                 <div class="absolute w-16 bottom-0 right-0 cursor-pointer z-20">
-                    <img class="rights w-16" src="img/right.svg" alt="right" draggable="false">
+                    <img  onclick="PlusSlide(1, 3)"class="rights w-16" src="img/right.svg" alt="right" draggable="false">
                 </div>
                 <div class="absolute bottom-0 translate-y-14 -translate-x-14 -z-10">
                     <img src="img/Dots.svg" alt="img" draggable="false">
                 </div>
                 <div class="carusel w-full">
-                    <img class="img w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
-                    <img class="img w-auto h-auto lg:h-600 hidden" src="img/a.jpg" alt="img" draggable="false">
-                </div>
+                    <img class="sl3 w-full h-auto lg:h-600 block" src="img/img.png" alt="img" draggable="false">
+                    <img class="sl3 w-auto h-auto lg:h-600 hidden" src="img/1.png" alt="img" draggable="false">
+                    <img class="sl3 w-auto h-auto lg:h-600 hidden" src="img/2.png" alt="img" draggable="false">
+                    <img class="sl3 w-auto h-auto lg:h-600 hidden" src="img/3.png" alt="img" draggable="false">
+                    <img class="sl3 w-auto h-auto lg:h-600 hidden" src="img/4.png" alt="img" draggable="false">                </div>
             </div>
             <div >
                 <h1 class="text-white font-bold pt-24 lg:pt-0 text-center lg:text-left text-3xl md:text-5xl lg:text-6xl pb-5 lg:pb-8">Out in the wild</h1>
